@@ -13,24 +13,18 @@ TOKEN = "8414316313:AAErMbI6zInPJ6D8KRiQemuDAP9-chVM1U4"
 
 # Ссылки (замените на реальные)
 CHANNEL_LINK = "https://t.me/+dfpuM8fKxCkyNmM0"
-SHOP_LINK = "https://t.me/fizshopglenex"
 SITE1_LINK = "http://fameclub.hgweb.ru"
 SITE2_LINK = "http://osintsearch.hgweb.ru"
 EXTRA_LINK = "https://t.me/pripiskaybiistvenii"
-REVIEWS_LINK = "https://t.me/repaglenexa"  # Замените на реальную ссылку
-CHAT_LINK = "https://t.me/chatglenex"  # Замените на реальную ссылку
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Обработчик команды /start"""
     # Создаем кнопки
     keyboard = [
         [InlineKeyboardButton("📢 Телеграм канал", url=CHANNEL_LINK)],
-        [InlineKeyboardButton("🛍️ Физ шоп", url=SHOP_LINK)],
         [InlineKeyboardButton("🌐 Фейм лист", url=SITE1_LINK)],
         [InlineKeyboardButton("🌐 Осинт поиск", url=SITE2_LINK)],
         [InlineKeyboardButton("ℹ️ Приписка", url=EXTRA_LINK)],
-        [InlineKeyboardButton("⭐ Отзывы", url=REVIEWS_LINK)],
-        [InlineKeyboardButton("💬 Мой чат", url=CHAT_LINK)],
     ]
     
     reply_markup = InlineKeyboardMarkup(keyboard)
